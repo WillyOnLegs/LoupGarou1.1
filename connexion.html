@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connexion</title>
+    <link rel="stylesheet" href="css/connexion.css">
+</head>
+<body>
+    <header>
+        <nav class="barre-navigation">
+            <div>
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="liens-navigation">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cartes.html">Cartes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Changer le thème">
+                <img src="img/moon.png" id="moon-icon" style="display: none;">
+                <img src="img/sun.png" id="sun-icon">
+            </button>
+
+            <button>
+                <a href="connexion.html" class="btn-connexion"><img src="img/utilisateur.png"></a>
+            </button>
+        
+        </nav>
+        
+    </header>
+    <main>
+    <div class="form-wrapper">
+        <h1>Inscription</h1>
+        <form id="connexion">
+            <div class="form-field">
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo" class="input-field">
+                <div class="error-message" id="pseudoError"></div>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Adresse email" class="input-field">
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" class="input-field">
+                <div class="error-message" id="passwordError"></div>
+            </div>
+
+            <div class="form-field">
+                <label for="confirmPassword">Confirmez mot de passe :</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmez le mot de passe" class="input-field">
+                <div class="error-message" id="confirmPasswordError"></div>
+            </div>
+
+            <div class="form-field custom-checkbox">
+                <input type="checkbox" name="terms" id="terms"> 
+                <label for="terms" class="checkbox-label">Accepter les conditions</label>
+                <div class="error-message" id="termsError"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">Envoyer</button>
+
+            <div class="response-message" id="responseMessage"></div>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <div class="contenu-footer" id="contact">
+            <div class="section-footer">
+                <h2>À propos de nous</h2>
+                <p>Découvrez notre passion pour les jeux de société ! Nous réunissons les passionnés pour partager des moments de convivialité et de stratégie.</p>
+            </div>
+            <div class="section-footer">
+                <h2>Liens rapides</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="formulaire.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h2>Contactez-nous</h2>
+                <p>Email: contact@loupgarou.fr</p>
+                <p>Téléphone: XX XX XX XX XX</p>
+            </div>
+            <div class="section-footer">
+                <h2>Suivez-nous</h2>
+                <div class="icones-sociaux">
+                    <a href="index.html"><img src="img/icones/icone-facebook.png" alt="Facebook"></a>
+                    <a href="index.html"><img src="img/icones/icone-insta.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bas-footer">
+            <p>Réalisé par Nathan Colin</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/connexion.js"></script>
+</body>
+</html>

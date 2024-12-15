@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icone.png" type="icon">
+    <title>Cartes</title>
+    <link rel="stylesheet" href="css/cartes.css">
+</head>
+<body>
+    <header>
+        <nav class="barre-navigation">
+            <div>
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="liens-navigation">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cartes.html">Cartes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Changer le thème">
+                <img src="img/moon.png" id="moon-icon" style="display: none;">
+                <img src="img/sun.png" id="sun-icon">
+            </button>
+
+            <button>
+                <a href="connexion.html" class="btn-connexion"><img src="img/utilisateur.png" id="sun-icon"></a>
+            </button>
+        
+        </nav>
+        
+    </header>  
+
+    <main>
+        
+        <div class="tabs">
+            <button class="tab-button active" data-tab="tout">Tout</button>
+            <button class="tab-button" data-tab="villageois">Villageois</button>
+            <button class="tab-button" data-tab="loupgarou">Loup Garou</button>
+        </div>
+
+        
+        <div class="conteneur" id="cartes-container">
+            
+            <div class="tab-content tout active">
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_loupgarou.jpg" alt="Loup Garou">
+                    <div class="details">
+                        Le loup-garou est un être mi-homme mi-loup qui se transforme la nuit pour tuer les villageois.
+                        <br/><br/>Le loup-garou incarne l'un des rôles de l'équipe des loups-garous. Il connaît l'identité des autres loups-garous et doit essayer de tuer tous les villageois sans se faire découvrir. Il se réunit chaque nuit avec les autres loups-garous pour décider de leur victime. Il gagne si tout le village est éliminé.
+                    </div>
+                </div>
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_villaegois.jpg" alt="Villageois">
+                    <div class="details">
+                        Le villageois est un personnage qui incarne l'habitant basique d'un village. Son rôle est de découvrir l'identité des loups-garous et de les éliminer avant qu'ils ne tuent tous les villageois. Il gagne lorsque tous les loups garous sont morts.
+                        <br/><br/>Le villageois n'a aucun pouvoir spécial, si ce n'est de voter au conseil du village contre celui qu'il suspecte être loup garou.
+                    </div>
+                </div>
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_voleur.jpg" alt="Voleur">
+                    <div class="details">
+                        Le Voleur reçoit lors de la première nuit la possibilité de choisir son rôle parmi deux autres rôles non-distribués. S'il n'en choisit aucun il est considéré comme un Simple Villageois. C'est un personnage dont les capacités varient énormément en fonction du meneur et des joueurs.
+                        <br/><br/>Si le voleur est une des deux cartes non distribuées, le meneur de jeu doit faire comme si c'était l'un des joueurs et doit faire le même discours que si quelqu'un avait la carte.
+                    </div>
+                </div>
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_sorciere.jpg" alt="Sorcière">
+                    <div class="details">
+                        La sorcière possède deux potions : une de guérison et une d'empoisonnement. Elle ne peut utiliser chacune de ses potions qu'une seule fois au cours de la partie. Durant la nuit, lorsque les loups-garous se sont rendormis, le meneur de jeu va appeler la sorcière et va lui montrer la personne tuée par les loups-garous.
+                        <br/><br/>La sorcière a trois possibilités :
+                        <br/><br/>ressusciter la personne tuée et donc perdre sa seule potion de guérison ;
+                        tuer une autre personne en plus de la victime et donc perdre sa seule potion d'empoisonnement.
+                        ne rien faire
+                        <br/>La sorcière peut utiliser ses deux potions durant la même nuit si elle le souhaite.
+                    </div>
+                </div>
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_cupidon.jpg" alt="Cupidon">
+                    <div class="details">
+                        Cupidon est appelé uniquement la première nuit afin d'unir un couple. Le meneur de jeu le contacte le moment venu, puis cupidon désigne deux noms parmi les joueurs. Ces deux personnes seront les amoureux. Si un des deux qui sont en couple meurt, l'autre meurt avec son amant.
+                    </div>
+                </div>
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_ptitefille.jpg" alt="Petite Fille">
+                    <div class="details">
+                        La petite fille est un rôle très difficile à jouer. En effet lorsque les loups garous sont appelés la nuit, elle a le droit de les espionner. Il existe plusieurs variantes à ce rôle, plus intéressantes à jouer selon la communauté.
+                        <br/><br/>Si la petite fille se fait prendre à espionner les loups garous par ceux-ci, elle meurt immédiatement, à la place de la victime désignée par les loups garous.
+                    </div>
+                </div>
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_voyante.jpg" alt="Voyante">
+                    <div class="details">
+                        Chaque nuit la voyante est appelée par le maître du jeu et peut découvrir la carte d'un joueur. La voyante est un des personnages les plus puissants dans le camp du village. Elle pourra facilement identifier des joueurs en qui elle pourra avoir confiance, mais surtout l'identité de ses ennemis.
+                    </div>
+                </div>
+                <div class="bloc-info villageois"><img src="img/Cartes/carte_chasseur.jpg" alt="Chasseur">
+                    <div class="details">
+                        Le chasseur n'a aucun rôle particulier à jouer tant qu'il est vivant. Mais dès qu'il meurt, qu'il soit tué dans la nuit (Loups-garous, sorcière) ou à la suite d'une décision des villageois, il doit désigner une personne qui mourra également.
+                        <br/><br/>Si un chasseur amoureux est éliminé, il peut quand même tuer une personne, ce qui peut mener à une partie sans survivants.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="tab-content villageois">
+                <div class="bloc-info"><img src="img/Cartes/carte_villaegois.jpg" alt="Villageois">
+                    <div class="details">
+                        Le villageois est un personnage qui incarne l'habitant basique d'un village. Son rôle est de découvrir l'identité des loups-garous et de les éliminer avant qu'ils ne tuent tous les villageois. Il gagne lorsque tous les loups garous sont morts.
+                        <br/><br/>Le villageois n'a aucun pouvoir spécial, si ce n'est de voter au conseil du village contre celui qu'il suspecte être loup garou.
+                    </div>
+                </div>
+                <div class="bloc-info"><img src="img/Cartes/carte_voleur.jpg" alt="Voleur">
+                    <div class="details">
+                        Le Voleur reçoit lors de la première nuit la possibilité de choisir son rôle parmi deux autres rôles non-distribués. S'il n'en choisit aucun il est considéré comme un Simple Villageois. C'est un personnage dont les capacités varient énormément en fonction du meneur et des joueurs.
+                        <br/><br/>Si le voleur est une des deux cartes non distribuées, le meneur de jeu doit faire comme si c'était l'un des joueurs et doit faire le même discours que si quelqu'un avait la carte.
+                    </div>
+                </div>
+                <div class="bloc-info"><img src="img/Cartes/carte_sorciere.jpg" alt="Sorcière">
+                    <div class="details">
+                        La sorcière possède deux potions : une de guérison et une d'empoisonnement. Elle ne peut utiliser chacune de ses potions qu'une seule fois au cours de la partie. Durant la nuit, lorsque les loups-garous se sont rendormis, le meneur de jeu va appeler la sorcière et va lui montrer la personne tuée par les loups-garous.
+                        <br/><br/>La sorcière a trois possibilités :
+                        <br/><br/>ressusciter la personne tuée et donc perdre sa seule potion de guérison ;
+                        tuer une autre personne en plus de la victime et donc perdre sa seule potion d'empoisonnement.
+                        ne rien faire
+                        <br/>La sorcière peut utiliser ses deux potions durant la même nuit si elle le souhaite.
+                    </div>
+                </div>
+                <div class="bloc-info"><img src="img/Cartes/carte_cupidon.jpg" alt="Cupidon">
+                    <div class="details">
+                        Cupidon est appelé uniquement la première nuit afin d'unir un couple. Le meneur de jeu le contacte le moment venu, puis cupidon désigne deux noms parmi les joueurs. Ces deux personnes seront les amoureux. Si un des deux qui sont en couple meurt, l'autre meurt avec son amant.
+                    </div>
+                </div>
+                <div class="bloc-info"><img src="img/Cartes/carte_ptitefille.jpg" alt="Petite Fille">
+                    <div class="details">
+                        La petite fille est un rôle très difficile à jouer. En effet lorsque les loups garous sont appelés la nuit, elle a le droit de les espionner. Il existe plusieurs variantes à ce rôle, plus intéressantes à jouer selon la communauté.
+                        <br/><br/>Si la petite fille se fait prendre à espionner les loups garous par ceux-ci, elle meurt immédiatement, à la place de la victime désignée par les loups garous.
+                    </div>
+                </div>
+                <div class="bloc-info"><img src="img/Cartes/carte_voyante.jpg" alt="Voyante">
+                    <div class="details">
+                        Chaque nuit la voyante est appelée par le maître du jeu et peut découvrir la carte d'un joueur. La voyante est un des personnages les plus puissants dans le camp du village. Elle pourra facilement identifier des joueurs en qui elle pourra avoir confiance, mais surtout l'identité de ses ennemis.
+                    </div>
+                </div>
+                <div class="bloc-info"><img src="img/Cartes/carte_chasseur.jpg" alt="Chasseur">
+                    <div class="details">
+                        Le chasseur n'a aucun rôle particulier à jouer tant qu'il est vivant. Mais dès qu'il meurt, qu'il soit tué dans la nuit (Loups-garous, sorcière) ou à la suite d'une décision des villageois, il doit désigner une personne qui mourra également.
+                        <br/><br/>Si un chasseur amoureux est éliminé, il peut quand même tuer une personne, ce qui peut mener à une partie sans survivants.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="tab-content loupgarou">
+                <div class="bloc-info loupgarou"><img src="img/Cartes/carte_loupgarou.jpg" alt="Loup Garou">
+                    <div class="details">
+                        Le loup-garou est un être mi-homme mi-loup qui se transforme la nuit pour tuer les villageois.
+                        <br/><br/>Le loup-garou incarne l'un des rôles de l'équipe des loups-garous. Il connaît l'identité des autres loups-garous et doit essayer de tuer tous les villageois sans se faire découvrir. Il se réunit chaque nuit avec les autres loups-garous pour décider de leur victime. Il gagne si tout le village est éliminé.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenu-footer" id="contact">
+            <div class="section-footer">
+                <h2>À propos de nous</h2>
+                <p>Découvrez notre passion pour les jeux de société ! Nous réunissons les passionnés pour partager des moments de convivialité et de stratégie.</p>
+            </div>
+            <div class="section-footer">
+                <h2>Liens rapides</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="formulaire.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h2>Contactez-nous</h2>
+                <p>Email: contact@loupgarou.fr</p>
+                <p>Téléphone: XX XX XX XX XX</p>
+            </div>
+            <div class="section-footer">
+                <h2>Suivez-nous</h2>
+                <div class="icones-sociaux">
+                    <a href="index.html"><img src="img/icones/icone-facebook.png" alt="Facebook"></a>
+                    <a href="index.html"><img src="img/icones/icone-insta.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bas-footer">
+            <p>Réalisé par Nathan Colin</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/cartes.js"></script>
+</body>
+</html>
